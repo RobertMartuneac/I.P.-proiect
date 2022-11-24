@@ -303,14 +303,14 @@
     border: 2px solid;
     width: 150px;
     height: 50px;
-    box-shadow: inset 0 0 0 0 #f38e22;
+    box-shadow: inset 0 0 0 0 #00a1e4;
     transition: ease-out 0.5s;
     border-radius: 12px;
 }
 
 .about .about-content .about-btn:hover {
     color: white;
-    box-shadow: inset 150px 0 0 0 #f38e22;
+    box-shadow: inset 150px 0 0 0 #00a1e4;
 }
 
 @media screen and (max-width: 1499px) {
@@ -368,6 +368,11 @@
 }
 
 @media screen and (max-width: 499px) {
+
+    .about{
+        margin-top: 100px;
+    }
+    
     .about .reflection {
         width: 250px;
         height: 222px;
@@ -727,3 +732,509 @@
 }
 
 /* ======== performante end ======== */
+/* ======== next game start ========== */
+
+.NextGame {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    display: flex;
+    background-image: url(/img/Unback.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    border-radius: 12px;
+}
+
+.Game {
+    width: calc(75% - 30px);
+    height: 100%;
+    background-color: transparent;
+    border-right: 100px solid white;
+    border-bottom: 400px solid transparent;
+    border-radius: 12px 0 0 12px;
+}
+
+.Game h1{
+    display: none;
+}
+
+.Game .line1{
+    display: none;
+}
+
+.Game .line2{
+    display: none;
+}
+
+.Title {
+    width: calc(25% + 30px);
+    height: 100%;
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+    padding-top: 80px;
+}
+
+.Title .RezGame1{
+    display: none;
+}
+
+.echipa1 {
+    width: 170px;
+    height: 170px;
+}
+
+.echipa2 {
+    width: 170px;
+    height: 170px;
+}
+
+.between{
+    padding-top: 130px;
+}
+
+.up{
+    display: flex;
+    flex-direction: row;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.up .versus{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 50px;
+}
+
+.down{
+    text-align: center;
+    padding-left: 10px;
+}
+
+.down p{
+    margin: 0;
+}
+
+.date-time{
+    display: flex;
+    flex-direction: row;
+}
+
+.date-line{
+    height: 25px;
+    width: 1px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.down p{
+    font-size: larger;
+    color: white;
+}
+
+.RezGame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title h1{
+    font-size: 60px;
+}
+
+.line1{
+    height: 2px;
+    width: 270px;
+    background-color: black;
+    transform: translateX(-22%);
+}
+
+.line2{
+    height: 2px;
+    width: 260px;
+    background-color: black;
+    transform: translateX(27%);
+}
+
+.ultimul{
+    padding-left: 10px;
+}
+
+.meci{
+    padding-top: 40px;
+    padding-left: 65px;
+}
+
+@media screen and (max-width: 1249px) {
+    .NextGame{
+        width: 1000px;
+    }
+
+    .Title .line2{
+        transform: translateX(8%);
+    }
+
+    .meci{
+        padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .NextGame{
+        width: 800px;
+    }
+
+    .Title .line1{
+        width: 220px;
+        transform: translateX(-27%);
+    }
+
+    .Title .line2{
+        width: 170px;
+        transform: translateX(35%);
+    }
+
+    .ultimul{
+        padding-left: 0;
+        transform: translateX(-15%);
+    }
+
+    .meci{
+        padding-left: 55px;
+    }
+
+    .echipa1 {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .echipa2 {
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 899px) {
+    .NextGame{
+        width: 600px;
+        height: 800px;
+        flex-direction: column;
+        border-radius: 15px 15px 12px 12px;
+    }
+
+    .Game{
+        width: 100%;
+        height: calc(20% + 100px);
+        border: none;
+        background-color: white;
+        border-radius: 12px 12px 0 0;
+        
+    }
+
+    .Game .RezGame{
+        display: none;
+    }
+
+    .Game h1{
+        display: block;
+    }
+
+    .Game .line1{
+        display: block;
+    }
+    .Game .line2{
+        display: block;
+    }
+
+    .Title{
+        width: 100%;
+        height: calc(80% - 100px);
+        background-color: transparent;
+        border: none;
+        border-top: 100px solid white;
+        border-right: 600px solid transparent;
+        border-radius: 0 0 12px 12px;
+        padding-top: 50px;
+    }
+
+    .Title h1{
+        display: none;
+    }
+
+    .Title .line1{
+        display: none;
+    }
+
+    .Title .line2{
+        display: none;
+    }
+
+    .Title .RezGame1{
+        display: flex;
+        padding-top: 25px;
+        padding-left: 39px;
+    }
+
+    .between{
+        padding-top: 30px;
+    }
+
+    .echipa1 {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .echipa2 {
+        width: 170px;
+        height: 170px;
+    }
+
+    .Game{
+        padding-top: 30px;
+        padding-left: 100px;
+    }
+
+    .Game h1{
+        font-size: 60px;
+    }
+
+    .line1{
+        width: 300px;
+        transform: translateX(-33.5%);
+    }
+
+    .meci{
+        padding-left: 240px;
+    }
+
+    .line2{
+        transform: translateX(92.5%);
+    }
+    
+}
+
+@media screen and (max-width: 649px) {
+    .NextGame{
+        width: 450px;
+        height: 600px;
+        flex-direction: column;
+        border-radius: 15px 15px 12px 12px;
+    }
+
+    .Game{
+        width: 100%;
+        height: calc(20% + 100px);
+        border: none;
+        background-color: white;
+        border-radius: 12px 12px 0 0;
+        
+    }
+
+    .Game .RezGame{
+        display: none;
+    }
+
+    .Game h1{
+        display: block;
+    }
+
+    .Game .line1{
+        display: block;
+    }
+    .Game .line2{
+        display: block;
+    }
+
+    .Title{
+        width: 100%;
+        height: calc(80% - 100px);
+        background-color: transparent;
+        border: none;
+        border-top: 60px solid white;
+        border-right: 450px solid transparent;
+        border-radius: 0 0 12px 12px;
+        padding-top: 50px;
+    }
+
+    .Title h1{
+        display: none;
+    }
+
+    .Title .line1{
+        display: none;
+    }
+
+    .Title .line2{
+        display: none;
+    }
+
+    .Title .RezGame1{
+        display: flex;
+        padding: 0;
+        padding-left: 15px;
+
+    }
+
+    .between{
+        padding-top: 10px;
+    }
+
+    .echipa1 {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .echipa2 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .Game{
+        padding-top: 15px;
+    }
+
+    .Game h1{
+        font-size: 60px;
+    }
+
+    .line1{
+        width: 300px;
+        transform: translateX(-33.5%);
+    }
+
+    .meci{
+        padding-top: 20px;
+        padding-left: 90px;
+    }
+
+    .line2{
+        transform: translateX(35%);
+    }
+
+    .up{
+        font-size: 60px;
+    }
+
+    .down{
+        padding-left: 2px;
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 499px) {
+
+    .NextGame{
+        width: 350px;
+        height: 500px;
+        flex-direction: column;
+        border-radius: 15px 15px 12px 12px;
+    }
+
+    .Game{
+        width: 100%;
+        height: calc(20% + 100px);
+        border: none;
+        background-color: white;
+        border-radius: 12px 12px 0 0;
+        
+    }
+
+    .Game .RezGame{
+        display: none;
+    }
+
+    .Game h1{
+        display: block;
+    }
+
+    .Game .line1{
+        display: block;
+    }
+    .Game .line2{
+        display: block;
+    }
+
+    .Title{
+        width: 100%;
+        height: calc(80% - 100px);
+        background-color: transparent;
+        border: none;
+        border-top: 50px solid white;
+        border-right: 350px solid transparent;
+        border-radius: 0 0 12px 12px;
+        padding-top: 50px;
+    }
+
+    .Title h1{
+        display: none;
+    }
+
+    .Title .line1{
+        display: none;
+    }
+
+    .Title .line2{
+        display: none;
+    }
+
+    .Title .RezGame1{
+        display: flex;
+        padding: 0;
+    }
+
+    .between{
+        padding-top: 10px;
+    }
+
+    .echipa1 {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .echipa2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Game{
+        padding-top: 10px;
+    }
+
+    .Game h1{
+        font-size: 45px;
+    }
+
+    .line1{
+        width: 250px;
+        transform: translateX(-40%);
+    }
+
+    .meci{
+        padding-top: 30px;
+        padding-left: 90px;
+    }
+
+    .line2{
+        width: 160px;
+        transform: translateX(56%);
+    }
+
+    .up{
+        font-size: 50px;
+    }
+
+    .down{
+        padding-left: 2px;
+        font-size: 12px;
+    }
+    
+}
+
+/* ======== next game start ======== */
